@@ -1,0 +1,31 @@
+{
+  "name": "doctor",
+  "version": "0.0.1",
+  "description": "A Wordpress theme for medical professionals who like to blog.",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/abarthakur/theme-doctor.git"
+  },
+  "keywords": [
+    "wordpress",
+    "doctor",
+    "blog"
+  ],
+  "author": "Aneesh Barthakur",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/abarthakur/theme-doctor/issues"
+  },
+  "homepage": "https://github.com/abarthakur/theme-doctor#readme",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-wp-toolkit": "^2"
+  }
+}
