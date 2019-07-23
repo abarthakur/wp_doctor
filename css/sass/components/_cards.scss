@@ -1,0 +1,380 @@
+/* Featured Blog Post Card Section-----------------------------------------------*/
+
+div.featured-post-card{
+	border-radius:unset!important;
+	overflow:hidden;
+	height:42rem;
+}
+
+div.featured-post-card div.card-body{
+	padding:0;
+	position:relative;
+}
+
+div.featured-post-img-and-header{
+	padding:0;
+	margin:0;
+	position:relative;
+}
+
+img.featured-post-img{
+	border-radius:unset!important;
+	width:100%;
+	height:26rem;
+	object-fit:cover;
+	max-width:100%;
+	margin:0;
+}
+
+div.featured-post-title-holder{
+	margin:0;
+	text-align:center;
+	position:absolute;
+	left:0;
+	right:0;
+	bottom:-1.56rem;
+}
+
+a.featured-post-title-link{
+	text-decoration:none;
+	color:unset;
+}
+
+a.featured-post-title-link:hover{
+	text-decoration:none;
+	color:#b74747;
+}
+
+h2.featured-post-title{
+	padding-left:2rem;
+	padding-right:2rem;
+	width:max-content;
+	margin:auto;
+	background-color:lightblue;
+}
+
+div.featured-post-text{
+	margin-top:1.5rem;
+	padding-top:1rem;
+	padding-left: 2rem;
+	padding-right: 2rem;
+	max-height:10rem;
+	overflow:hidden;
+}
+
+div.featured-post-fb-container{
+	position: absolute;
+	margin-bottom: 1.5rem;
+	bottom: 0;
+	padding-left:2rem;
+}
+
+div.featured-post-date-container{
+	position:absolute;
+	bottom:0;
+	right:0;
+	margin-bottom: 1.5rem;
+	padding-right:2rem;
+}
+
+div.featured-post-date-container small{
+	font-size:90%;
+}
+
+@media only screen  and (max-width : 768px) {
+	div.featured-post-col{
+		padding:0.5rem;
+		padding-top:0;
+		padding-bottom:0;
+	}
+
+	div.featured-post-card{
+		margin-bottom: 0.5rem;
+		max-height:80vh;
+	}
+
+	img.featured-post-img{
+		object-position: 0 0;
+		max-height:40vh;
+	}
+
+	div.featured-post-text{
+		max-height:25vh;
+		overflow:hidden;
+	}
+}
+
+
+
+/* Blog Post Card Section-----------------------------------------------*/
+
+div.card-col{
+	margin:0;
+	padding:0.5rem;
+}
+
+div.blog-card.post-card{
+	border-radius:unset!important;
+	padding:0;
+	height: 42rem;
+	overflow:hidden;
+}
+
+div.post-card-body{
+	padding-top:2rem;
+	padding-left: 2rem;
+	padding-right: 2rem;	
+	position: relative;
+}
+
+div.post-img-and-header{
+	padding:0;
+	margin:0;
+	position:relative
+}
+
+img.post-card-img{
+	border-radius:unset!important;
+	width:100%;
+	height:21rem;
+	object-fit:cover;
+	max-width:100%;
+}
+
+div.post-primary-category-holder{
+	margin:0;
+	text-align:center;
+	position:absolute;
+	left:0; 
+	right:0;
+	bottom:-0.8rem;
+}
+
+h4.post-primary-category{
+	padding-top:0.4rem;
+	padding-bottom:0.4rem;
+	padding-left:1rem;
+	padding-right:1rem;
+	width:max-content;
+	margin:auto;
+	background-color:lightblue;
+	border:1px solid #a3afc7;
+}
+
+a.post-primary-category-link{
+	color: unset;
+	text-decoration: unset;
+}
+
+a.post-primary-category-link:hover{
+	color: unset;
+	text-decoration: unset;
+}
+
+a.post-primary-category-link:hover h4{
+	color:white;
+	background-color:grey;
+}
+
+a.post-card-title-link{
+	color: unset;
+}
+
+a.post-card-title-link:hover{
+	color: #66b3ff;
+	text-decoration:unset;
+}
+
+div.post-card-fb-container{
+	position: absolute;
+	margin-bottom: 1.5rem;
+	bottom: 0;
+}
+
+div.post-card-date-container{
+	position:absolute;
+	bottom:0;
+	right:0;
+	margin-bottom: 1.5rem;
+	padding-right:2rem;
+}
+
+@media only screen  and (max-width : 768px) {
+	div.card-col{
+		padding:0.5rem;
+	}
+
+	div.post-card.blog-card{
+		margin-bottom: 0.5rem;
+		max-height:80vh;
+	}
+
+	img.post-card-img{
+		object-position: 0 0;
+		max-height:40vh;
+	}
+
+	div.post-card-text{
+		max-height:25vh;
+		overflow:hidden;
+	}
+}
+
+/* Blog Post Custom Card Section-----------------------------------------------*/
+
+div.first-custom-card-col{
+	padding:0;
+}
+
+div.custom-card.blog-card{
+	border-radius:unset!important;
+	padding:0;
+	height: 42rem;
+	overflow:hidden;
+}
+
+img.custom-card-img{
+	border-radius:unset!important;
+	margin:0;
+	width:100%;
+	height:21rem;
+	object-fit:cover;
+	max-width:100%;
+}
+
+div.custom-card.blog-card div.card-body{
+	padding-top:2rem;
+	padding-left: 2rem;
+	padding-right: 2rem;
+}
+
+h2.custom-card-title{
+	padding:0;
+	margin-top:2rem;
+}
+
+div.custom-card.blog-card div.card-body ul {
+	list-style-type: disc;
+	padding-left: 1rem;
+}
+
+@media only screen  and (max-width : 768px) {
+	div.first-custom-card-col{
+		padding:0.5rem;
+	}
+
+	div.custom-card.blog-card{
+		margin-bottom: 0.5rem;
+		max-height:80vh;
+		overflow:hidden;
+		height:auto;
+	}
+
+	img.custom-card-img{
+		object-position: 0 0;
+		max-height:40vh;
+	}
+}
+
+/* Contact us pow card */
+
+div.pow-detail-card{
+	min-height:25rem;
+	min-width:48%;
+	max-width:48%;
+	border-radius:unset!important;
+}
+
+div.map-container{
+	height:50%;
+}
+
+div.pow-text-container{
+	padding-top:0.5rem;
+	padding-left:1rem;
+	padding-right:1rem;
+	padding-bottom:6.5rem;
+	height:100%;
+	position:relative;
+}
+
+p.pow-name{
+	font-size:1.5rem;
+	margin:0;
+}
+
+div.call-col{
+	position:absolute;
+	bottom:1rem;
+	width:70%;
+}
+
+a.detail-call-button{
+	border-radius:0;
+	padding-left:1rem;
+	padding-right:1rem;
+	margin-top:0.5rem;
+	margin-bottom:0.5rem;
+}
+
+@media only screen and (max-width : 768px) {
+	div.pow-row{
+		display:block!important;
+	}
+
+	div.pow-detail-card{
+		min-width:100%;
+		max-width:100%;
+		border-radius:unset!important;
+		margin-bottom:1rem;
+	}
+}
+
+
+/* services section */
+
+@media (min-width: 992px) { 
+	div.service-card, div.custom-card.service-card{
+		height:21rem;
+	}
+}
+
+div.service-card, div.custom-card.service-card{
+	padding:0;
+	overflow:hidden;
+	border-radius:0;
+}
+
+
+
+div.service-card-body{
+	padding: 0.5rem 0.4rem;
+}
+
+
+div.service-card-body p{
+	margin:0;
+}
+
+
+
+/* div.service-card-body{
+	font-size:0.8rem;
+	padding: 0.5rem 0.4rem;
+} */
+
+div.custom-card.service-card div.card-body{
+	height:21rem;
+	/* font-size:0.8rem; */
+	padding: 0.5rem 0.4rem;
+	overflow:hidden;
+}
+
+div.custom-card.service-card div.card-body ul {
+	list-style-type: disc;
+	padding-left: 2.5rem;
+	padding-right: 1.5rem;
+	padding-top : 0.5rem;
+	padding-bottom:0.5rem;
+}
+

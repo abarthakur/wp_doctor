@@ -1,0 +1,18 @@
+
+/* back to top button */
+
+a#back-to-top{
+	position:fixed;
+	bottom:1.5rem;
+	right:2rem;
+	color:#c75994;
+	opacity:0.5;
+	border-radius:5rem;
+	display:none;
+}
+a#back-to-top:hover{
+	position:fixed;
+	bottom:1.8rem;
+	color:#088BA6;
+}
+

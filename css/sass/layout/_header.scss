@@ -1,0 +1,139 @@
+
+
+/* --------------------------------------------------------------------
+Header Section
+-------------------------------------------------------------------- */
+
+/* Brand Section-----------------------------------------------*/
+
+div.brand-ribbon{
+	background-image: linear-gradient(141deg, #0e5b84 0%, #2a87b3 51%, #5b9fbf 75%);
+}
+
+div.brand-row{
+	width:63%;
+	margin:auto;
+}
+
+a.da-brand h1{
+	font-family: 'Dynalight', cursive;
+	color:#faebd7;
+	font-size:4.25rem;
+	padding:0;
+	margin:0;
+	z-index:1001;
+}
+
+
+div.brand-ribbon .btn{
+	font-size:1.5rem;
+	border-radius:0;
+	background-color:#c550c3a1;
+	margin-right:2rem;
+}
+
+div.brand-ribbon .btn:hover{
+	background-color:#64b3a1;
+}
+
+/* Navbar Section-----------------------------------------------*/
+div.navbar-container{
+	background-color:#377592;
+	background-image: linear-gradient(141deg, #0e5b84 0%, #2a87b3 51%, #5b9fbf 75%);
+}
+
+div.navbar-row{
+	width:63%;
+	margin:auto;
+}
+
+span.slogan-text{
+	/* margin-left:1rem; */
+	font-family: 'Cinzel', serif;
+	font-size:1.5rem;
+	color:#faebd7;
+}
+
+nav#myTopNavBar{
+	padding:0;
+}
+
+div#daNavBarCollapse{
+	white-space:nowrap;
+}
+
+/* ORDER OF THE FOLLOWING SECTION IS IMPORTANT */
+
+div#daNavBarCollapse li.menu-item{
+	text-align: center;
+    padding-top: 0.8rem;
+    padding-bottom: 0.8rem;
+    padding-left: 2rem;
+	padding-right: 1rem;
+	background-color:unset;
+}
+
+div#daNavBarCollapse li.menu-item a{
+	color:#C6C6C6;
+	font-weight:bolder;
+}
+
+div#daNavBarCollapse li.menu-item:hover {
+	background-color:#978b8b99;
+}
+
+
+div#daNavBarCollapse li.menu-item:hover a{
+	color:white;
+}
+
+
+div#daNavBarCollapse li.menu-item.active,li.menu-item.active:hover{
+	background-color:#6cd9ef;
+}
+
+div#daNavBarCollapse li.menu-item.active a{
+	color:#5a3b3b;
+	font-weight:bolder;
+}
+
+div#daNavBarCollapse li.menu-item.active:hover a{
+	color:#5a3b3b;
+	text-decoration:underline;
+}
+
+div#daNavBarCollapse ul.dropdown-menu {
+	padding:0;
+	margin-top:0;
+	top:100%;
+	border-radius:unset;
+}
+
+div#daNavBarCollapse ul.dropdown-menu li.menu-item {
+	text-align:left;
+	background-color:#978b8b99;
+}
+
+div#daNavBarCollapse ul.dropdown-menu li.menu-item a{
+	color:white;
+}
+
+div#daNavBarCollapse ul.dropdown-menu li.menu-item:hover{
+	background-color:#666a7899;
+}
+
+div#daNavBarCollapse ul.dropdown-menu li.menu-item:hover a{
+	color:white;
+	text-decoration:underline;
+	background-color:unset;
+}
+
+a#searchButton{
+	padding:0.5rem 1rem;
+	color:#C6C6C6;
+}
+
+a#searchButton:hover{
+	color:#77e8ff;
+	font-size:150%;
+}

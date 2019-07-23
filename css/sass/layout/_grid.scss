@@ -1,0 +1,198 @@
+div.top-container{
+	width:100%;
+	max-width:100%;
+	padding:0;
+	background-color: #b9d1d8;
+	/* at least take up the screen height */
+	min-height:100vh;
+}
+
+div.top-page-row{
+	width:65%;
+	margin: auto;
+}
+
+/* Upto large phones ----------- */
+@media only screen and (max-width : 768px) {
+	div.top-page-row{
+		width:100%;
+	}
+}
+
+
+div.video-post-row-container{
+	background-color:#ffffff;
+}
+
+
+/* Styles for the 2 column (with sidebar) layout */
+
+
+div.content-col{
+	margin:0;
+	padding-left:0.5rem;
+	padding-right:0.5rem;
+	padding-top:2rem;
+	padding-bottom:4rem;
+}
+
+div.post-container{
+	border-right-style:outset;
+	border-right-width:1px;
+	background-color:white;
+	padding-left:1rem;
+	padding-right:1rem;
+	margin-top:1rem;
+	padding-top:0.5rem;
+	padding-bottom:4rem;
+	min-height:500px;	
+}
+
+div.post-content-container{
+	padding:1rem;
+}
+
+div.sidebar-col{
+	padding-left:1.5rem;
+	padding-right:0.5rem;
+	padding-top:2rem;
+	padding-bottom:4rem;
+}
+
+div.sidebar-wrapper{
+	margin:0;
+	padding:0;
+}
+
+
+div.sidebar-card{
+	padding:1rem;
+	margin-top:1rem;
+}
+
+@media only screen  and (max-width : 768px) {
+	div.content-col,div.sidebar-col{
+		padding:0.5rem;
+		padding-top:0;
+		padding-bottom:0;
+	}
+
+	div.post-container,div.sidebar-card{
+		margin-bottom:1rem;
+	}
+
+	div.post-content-container{
+		padding:0;
+	}
+}
+
+
+div.page-header-box{
+	padding:0;
+}
+
+h1.page-header-text{
+	margin:0;
+	font-size: 450%;
+}
+
+div.top-page-row.page-header-row{
+	display:block;
+	padding-top:1rem;
+	padding-bottom:0.7rem;
+	background-color:#088BA6;
+	color:#E6F4F1;
+	width:100%;
+	/* background-image: url("https://www.transparenttextures.com/patterns/black-linen.png"); */
+	/* opacity: 0.5; */
+}
+
+/* --------------------------------------------------------------------
+Contact Us Section
+-------------------------------------------------------------------- */
+
+
+div.post-container.contact-us-container{
+	min-height:300px;
+}
+
+div.pow-row{
+	padding:0;
+	padding-top:1rem;
+	padding-bottom:1rem;
+}
+
+@media only screen and (max-width : 768px) {
+	div.pow-row{
+		display:block!important;
+	}
+}
+
+
+/* services section */
+
+div.services-section-container{
+	padding-top:2rem;
+	padding-bottom:2rem;
+}
+
+div.section-header-row{
+	display:block;
+}
+
+
+/* --------------------------------------------------------------------
+Front Page Appointment Form Section
+-------------------------------------------------------------------- */
+
+div.appointment-form-container{
+	padding-top:6rem;
+	padding-bottom:4rem;
+	background-color:#2A272A;
+}
+
+@media only screen and (max-width : 768px) {
+	div.appointment-form-container{
+		padding-top:0;
+	}
+}
+
+
+
+
+/* SECTION HEADER SECTION */
+
+
+div.section-header-container{
+	padding-top:1.5rem;
+	padding-bottom:2rem;
+	/* background-color: #1fc8db; */
+	background-image: linear-gradient(141deg, #0e5b84 0%, #2a87b3 51%, #5b9fbf 75%);
+	color:white;
+}
+
+
+/* about section */
+
+img.about-image{
+	height:35rem!important;
+	width:100%!important;
+	object-fit:cover!important;
+}
+
+div.about-section-container{
+	padding-top:4rem;
+	background-color: white;
+padding-bottom: 4rem;
+}
+
+div.about-row{
+	background-color:white;
+	padding:1rem;
+	padding-left:0;
+	padding-right:0;
+}
+
+div.about-image-col{
+	padding:0;
+}

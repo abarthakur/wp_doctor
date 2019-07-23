@@ -1,0 +1,100 @@
+/* Video Header Section-----------------------------------------------*/
+
+div.video-header-container{
+	background-color:#677381;
+	padding:1rem;
+	padding-top:1.5rem;
+}
+
+div.video-header-col h1{
+	font-size: 2.5em;
+	padding:0;
+	margin:0;
+}
+
+div.video-header-text-col{
+	display: flex;
+	align-items: flex-end;
+	padding-bottom:0;
+}
+
+div.video-header-button-col{
+	padding:0.2rem;
+	width:25%;
+	max-width:25%;
+	
+}
+
+div.video-header-button-col button.more-videos{
+	border-radius:unset;
+	border:unset;
+	font-size:1.5rem;
+	padding:0.4rem;
+}
+
+@media only screen  and (max-width : 768px) {
+	div.video-header-col{
+		padding:0;
+	}
+
+	div.video-header-row h1{
+		margin-bottom:1rem;
+	}
+
+	div.video-header-text-col{
+		padding-left:0;
+		padding-right:0;
+	}
+}
+
+
+div.section-header-box{
+	/* background-color:lightyellow; */
+	padding:0;
+}
+
+h1.section-header-text{
+	margin:0;
+	font-size: 2.5em;
+}
+
+
+/* Form Header -----------------------------------------------*/
+
+div.appform-header-col{
+	padding:0;
+}
+
+div.jumbotron.appform-header-jumbotron{
+	height:100%;
+	width:100%;
+	border-radius:0;
+	background-color:#ffa0a0;
+	margin:0;
+}
+
+div.jumbotron.appform-header-jumbotron h1{
+	font-size:3.5rem;
+}
+
+div.jumbotron.appform-header-jumbotron p{
+	margin-top:1.5rem;
+	font-size:1.7rem;
+}
+
+@media only screen and (max-width : 768px) {
+	div.jumbotron.appform-header-jumbotron{
+		background-color:unset;
+		text-align:center;
+		color:white;
+	}
+	div.jumbotron.appform-header-jumbotron p{
+		display:none;
+	}
+}
+
+/* category.php */
+
+div.page-header-box div.empty-container{
+	height:6rem;
+}

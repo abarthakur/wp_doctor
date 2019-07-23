@@ -1,0 +1,61 @@
+/* sidebar appointment widget */
+
+div.sidebar-appointment-card h1{
+	font-size:2rem;
+	text-align:right;
+	hyphens:auto;
+}
+
+div.sidebar-appointment-card hr{
+	margin-top:0;
+	margin-bottom:1.5rem;
+}
+
+div.sidebar-appointment-card p{
+	/* height: 17rem; */
+	text-align:right;
+	margin:0;
+}
+
+p.appointment-buttons .btn{
+	font-size:1rem;
+	border-radius:0;
+	background-color:#155d73;
+}
+
+p.appointment-buttons .btn:hover{
+	background-color:#64b3a1;
+}
+
+/* testimonial sidebar widget */
+
+div.quote-container{
+	padding:0;
+	padding-top:1.5rem;
+}
+
+blockquote.testimonial-text{
+	padding-left:1rem;
+	padding-right:1rem;
+	margin:0;
+	padding-top:1rem;
+	padding-bottom:1rem;
+}
+div.sidebar-testimonial blockquote{
+	text-align:justify;
+}
+
+div.testimonial-img-container{
+	padding-bottom:1.5rem;
+	padding-top:1rem;
+	padding-left:1rem;
+	padding-right:1rem;
+}
+
+img.sidebar-testimonial-image{
+	width:100%;
+}
+
+i.testimonial-quote-right{
+
+}

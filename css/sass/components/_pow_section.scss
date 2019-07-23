@@ -1,0 +1,177 @@
+/* POW SECTION */
+
+div.pow-section-container{
+	padding-top:0;
+	padding-bottom:2rem;
+	background-color:white;
+}
+
+div.pow-wrapper{
+	padding-top:2rem;
+	padding-bottom:0;
+}
+
+.flip-card .flipper{
+	position:absolute;
+	bottom:9rem;
+	right:0.5rem;
+	z-index:5;
+	transition:0.3s;
+	background-color:grey;
+	display:none;
+	opacity:0.3;
+	border-radius:0;
+	padding:0.3rem;
+	transition:0.2s;
+}
+
+.flip-card.flipped .flipper{
+	display:block;
+	opacity:0.6;
+}
+
+.flipper:hover {
+    background-color: green;
+    color: white;
+}
+
+
+
+.flip-card{
+  width: 100%;
+  height: 100%;
+	padding:0;
+	margin:0;
+  -webkit-transform-style: preserve-3d;
+  -webkit-transition: 0.5s;
+  -moz-transform-style: preserve-3d;
+  -moz-transition: 0.5s;
+  -ms-transform-style: preserve-3d;
+  -ms-transition: 0.5s;
+  -o-transform-style: preserve-3d;
+  -o-transition: 0.5s;
+  transform-style: preserve-3d;
+  transition: 0.5s;
+}
+
+.flip-card.flipped {
+  transform:rotatey(-180deg);
+  -ms-transform:rotatey(-180deg); /* IE 9 */
+  -moz-transform:rotatey(-180deg); /* Firefox */
+  -webkit-transform:rotatey(-180deg); /* Safari and Chrome */
+  -o-transform:rotatey(-180deg); /* Opera */
+}
+
+
+.flip-card .face {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: 2;
+  backface-visibility: hidden;  /* W3C */
+  -webkit-backface-visibility: hidden; /* Safari & Chrome */
+  -moz-backface-visibility: hidden; /* Firefox */
+  -ms-backface-visibility: hidden; /* Internet Explorer */
+  -o-backface-visibility: hidden; /* Opera */
+  /* box-shadow: 0 0 10px rgba(0,0,0,0.5) */
+
+}
+.flip-card .front {
+  position: absolute;
+  z-index: 1;
+  cursor: pointer;
+}
+.flip-card .back {
+    cursor: pointer;			
+		transform:rotatey(-180deg);
+		-ms-transform:rotatey(-180deg); /* IE 9 */
+		-moz-transform:rotatey(-180deg); /* Firefox */
+		-webkit-transform:rotatey(-180deg); /* Safari and Chrome */
+		-o-transform:rotatey(-180deg); /* Opera */
+}
+
+@media (max-width: 992px) { 
+	div.pow-container{
+		height:unset!important;
+		overflow:hidden!important;
+		display:block!important;
+		flex-direction:unset!important;
+		background-color:white;
+	}
+
+	img.pow-img{
+		height:20rem!important;
+		width:100%!important;
+		object-fit:cover!important;
+	}
+
+	div.map-container{
+		height:20rem;
+	}
+}
+
+@media (min-width: 992px) { 
+	div.map-container{
+		height:22rem;
+		padding: 0;
+		margin:auto!important;
+	}
+}
+img.pow-img{
+	width:100%;
+	height:22rem;
+	/* width:30rem; */
+	object-fit:cover;
+}
+
+div.pow-container{
+	height:22rem;
+	overflow:hidden;
+	display:flex;
+	flex-direction:row;
+	width:65%;
+	padding:0;
+	background-color:white;
+}
+
+div.pow-header-container{
+	padding-top:0.5rem;
+	/* border-bottom:1px solid grey; */
+	/* border-top:1px solid grey; */
+}
+
+div.pow-header-container h1{
+	font-size:1.7rem;
+}
+
+
+div.pow-img-col{
+	padding:0;
+}
+
+div.pow-header-right{
+	text-align:right;
+}
+
+div.pow-excerpt-col{
+	padding-top:2rem;
+}
+
+hr.pow-header-hr{
+	margin-top:0;
+	margin-bottom:0;
+	position:absolute;
+  width: 120%;
+	bottom:-0.3rem;
+	right:unset;
+	left:0;
+}
+
+div.pow-text-container.order-lg-12 hr.pow-header-hr{
+	left:unset;
+	right:0;
+}
+
+div.pow-text-container p{
+	margin-bottom:0;
+}
