@@ -74,3 +74,22 @@ function doc_get_template_part($slug,$args){
 	include locate_template($slug . ".php", false);
 }
 ?>
+
+
+<?php
+function print_footer_menu($menu_location){
+	$locations = get_nav_menu_locations();
+	$menu_id = $locations[ $menu_location ] ;
+	$menu= wp_get_nav_menu_object($menu_id);
+	echo '<h3 class="footer-menu-title">' . $menu->name . "</h3>";
+	echo '<hr class="my-2">';
+	wp_nav_menu( array(
+	'theme_location'  => $menu_location,
+	'depth'	          => 1, // 1 = no dropdowns, 2 = with dropdowns.
+	'container'       => '',
+	'container_class' => '',
+	'container_id'    => '',
+	'menu_class'      => 'footer-menu'
+	));
+}
+?>
