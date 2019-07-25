@@ -43,8 +43,8 @@
 	<body <?php body_class(); ?>>
 		<?php get_template_part('partials/top-skip-links') ?>
 		<header>
-			<?php get_template_part('partials/website-banner') ?>
-			<?php get_template_part('partials/website-top-menu') ?>
+			<?php get_template_part('partials/banner'); ?>
+			<?php get_template_part('partials/navbar'); ?>
 		</header>
 		<main role="main">
 
