@@ -1,0 +1,153 @@
+{
+    "key": "group_5c7c5a7f6a73f",
+    "title": "Post Custom Fields",
+    "fields": [
+        {
+            "key": "field_5c7c871ca2a6a",
+            "label": "Primary Category",
+            "name": "primary_category",
+            "type": "taxonomy",
+            "instructions": "Fill the category which will appear prominently in the blog post card.",
+            "required": 1,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "taxonomy": "category",
+            "field_type": "select",
+            "allow_null": 0,
+            "add_term": 1,
+            "save_terms": 0,
+            "load_terms": 0,
+            "return_format": "id",
+            "multiple": 0
+        },
+        {
+            "key": "field_5c7ce9d2038de",
+            "label": "Square Image",
+            "name": "square_image",
+            "type": "image_aspect_ratio_crop",
+            "instructions": "Upload a relevant image. A dialog will open up with the crop tool. The crop tool is fixed at 1:1 aspect ratio.",
+            "required": 1,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "aspect_ratio_width": 1,
+            "aspect_ratio_height": 1,
+            "return_format": "id",
+            "preview_size": "thumbnail",
+            "library": "all",
+            "min_width": "",
+            "min_height": "",
+            "min_size": "",
+            "max_width": "",
+            "max_height": "",
+            "max_size": "",
+            "mime_types": ""
+        },
+        {
+            "key": "field_5c7d476d7d99e",
+            "label": "Wide Image",
+            "name": "wide_image",
+            "type": "image_aspect_ratio_crop",
+            "instructions": "Upload a relevant image. A dialog will open up with the crop tool. The crop tool is fixed at 1:1 aspect ratio.",
+            "required": 1,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "aspect_ratio_width": 4,
+            "aspect_ratio_height": 3,
+            "return_format": "id",
+            "preview_size": "thumbnail",
+            "library": "all",
+            "min_width": "",
+            "min_height": "",
+            "min_size": "",
+            "max_width": "",
+            "max_height": "",
+            "max_size": "",
+            "mime_types": ""
+        },
+        {
+            "key": "field_5d472abe7fcfd",
+            "label": "Card source",
+            "name": "card_content_source",
+            "type": "select",
+            "instructions": "Customize this post's appearance in the blog or category pages, by choosing what goes into the card.\r\n\r\nIf you want to create a \"short post\" which fits into the card you can use the  \"Use the main editor content (short post)\" option. This way you don't have to write an excerpt or custom card content (explained below) and can reuse the main content.\r\n\r\nIn contrast, if you have a long post, you can use the \r\n1. \"Use the images & excerpt\" option to generate the card from the image and excerpt fields.\r\n2. \"Write the card's content yourself\" option to write out formatted content for the card, which is different from the main content.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "image_and_excerpt": "Use the images & excerpt",
+                "use_main_content": "Use the main editor content (short post)",
+                "custom_card_content": "Write the card's content yourself"
+            },
+            "default_value": [
+                "image_and_excerpt"
+            ],
+            "allow_null": 0,
+            "multiple": 0,
+            "ui": 0,
+            "return_format": "value",
+            "ajax": 0,
+            "placeholder": ""
+        },
+        {
+            "key": "field_5d472ea6c8457",
+            "label": "Custom Card Content",
+            "name": "custom_card_content",
+            "type": "wysiwyg",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_5d472abe7fcfd",
+                        "operator": "==",
+                        "value": "custom_card_content"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "tabs": "all",
+            "toolbar": "full",
+            "media_upload": 1,
+            "delay": 0
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "post"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": 1,
+    "description": "",
+    "modified": 1565020231
+}
