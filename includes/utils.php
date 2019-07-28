@@ -1,3 +1,10 @@
+<?php 
+function doc_get_head_title(){
+	if (is_page()||is_single()){
+		return get_the_title();
+	}
+}
+?>
 <?php
 function print_image($field_name,$size_pixel_density_map,$image_classes,$print_caption)
 {	
@@ -60,4 +67,10 @@ function print_image($field_name,$size_pixel_density_map,$image_classes,$print_c
 		echo '</figure>';
 	}
 }	
+?>
+
+<?php 
+function doc_get_template_part($slug,$args){
+	include locate_template($slug . ".php", false);
+}
 ?>

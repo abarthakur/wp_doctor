@@ -8,7 +8,7 @@
  * @since   1.0.0
  */
 
-
+require_once get_stylesheet_directory() . "/includes/utils.php";
 ?>
 <!DOCTYPE html>
 
@@ -31,7 +31,7 @@
 		<?php get_template_part('partials/social-meta-tags') ?>
 
 		<!-- Title tag also goes in the head. This is what appears on the browser tab.-->
-		<title>The title of the article</title>
+		<title><?php echo doc_get_head_title();?></title>
 
 		<!-- Mark canonical pages-->
 		<link rel="canonical" href="https://www.example.com">
