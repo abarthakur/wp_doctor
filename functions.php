@@ -118,3 +118,43 @@ require_once get_template_directory() . '/lib/class-wp-bootstrap-navwalker.php';
 
 /* Register Settings pages */
 //TODO
+
+/* Add filters to transform the permalink for  child pages
+from ../parent_page/child_page
+to ../parent_page#child_page
+This is because in this theme,the child page content are
+displayed on (/live in) the parent page.
+Pages are allowed to have only 1 level of hierarchy. 
+i.e. grandchildren are unreachable.
+*/
+
+function transform_child_page_link($permalink){
+	$parts=explode("/",$permalink);
+	$last_part=$parts[count($parts)-1];
+	$first_part=null;
+	if ($last_part==""){
+		$last_part=$parts[count($parts)-2];
+		$first_part=implode("/",array_splice($parts,0,-2));
+	}
+	else{
+		$first_part=implode("/",array_splice($parts,0,-1));
+	}
+	$new_permalink=$first_part . "#" . $last_part;
+	return $new_permalink;
+}
+
+
+function filter_child_links_in_get_the_permalink($link,$post_id,$sample){
+    $page=get_post($post_id);
+    if ($page->post_type=="page"){
+        if ($page->post_parent){
+            $link=transform_child_page_link($link);
+        }
+    }
+    return $link;
+}
+
+//add_filter( string $tag, callable $function_to_add, int $priority = 10, int $accepted_args = 1 )
+//Filters the_permalink (via get_permalink (via get_page_link))
+//The source of all page links?
+add_filter('page_link','filter_child_links_in_get_the_permalink',10,3);

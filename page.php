@@ -1,6 +1,14 @@
 <?php 
 //TODO : DOC STRING
-//TODO : Child page (direct access) redirect to parent page
+//Redirect child page (direct access) to parent page
+if (is_page() && $post->post_parent){
+	//wordpress still associates the original permalink of the child page
+	//maybe later change the "set permalink" hook?
+	//hence still need to redirect
+	$permalink=get_permalink($post);
+	wp_redirect($permalink, 301);
+	exit;
+}
 get_header();
 require_once get_stylesheet_directory() . "/includes/utils.php";
 ?>
