@@ -26,6 +26,8 @@
   "homepage": "https://github.com/abarthakur/theme-doctor#readme",
   "devDependencies": {
     "gulp": "^3.9.1",
-    "gulp-wp-toolkit": "^2"
+    "gulp-imagemin": "^6.0.0",
+    "gulp-scale-images": "^1.2.1",
+    "gulp-wp-toolkit": "https://github.com/abarthakur/gulp-wp-toolkit/tarball/master"
   }
 }
