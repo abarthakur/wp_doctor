@@ -116,9 +116,6 @@ add_action( 'init', 'doc_register_menus' );
 require_once get_template_directory() . '/lib/class-wp-bootstrap-navwalker.php';
 
 
-/* Register Settings pages */
-//TODO
-
 /* Add filters to transform the permalink for  child pages
 from ../parent_page/child_page
 to ../parent_page#child_page
@@ -158,3 +155,19 @@ function filter_child_links_in_get_the_permalink($link,$post_id,$sample){
 //Filters the_permalink (via get_permalink (via get_page_link))
 //The source of all page links?
 add_filter('page_link','filter_child_links_in_get_the_permalink',10,3);
+
+
+/* Register Settings pages */
+
+require_once 'includes/settings-pages.php';
+
+add_action( 'admin_menu', 'register_theme_settings_pages' );
+add_action( 'admin_init', 'register_theme_settings' );
+
+
+//add_options_page( string $page_title, string $menu_title, string $capability, string $menu_slug, callable $function = '' )
+function register_theme_settings_pages() {
+	add_options_page( 'General Theme Settings', 'General Theme Settings',
+	 'manage_options', 'general-theme-settings-page', 'print_general_theme_settings_page' );
+}
+?>
