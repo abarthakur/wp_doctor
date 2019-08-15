@@ -77,6 +77,53 @@ function doc_get_template_part($slug,$args){
 
 
 <?php
+function print_responsive_card_grid($query, $args)
+{	
+	foreach (array('row_classes','col_classes','card_classes') as $params){
+		if (!array_key_exists($params,$args) || !$args[$params]){
+			$args[$params]='';
+		}
+	}
+?>
+	<div class="container <?php echo $args["container_classes"];?>">
+		<div class="row <?php echo $args["row_classes"];?>">
+		<?php
+			$col_classes=$args['col_classes'];
+			$post_count=0;
+			if (!is_array($col_classes) && is_string($col_classes)){
+				$col_classes=array($col_classes);
+			}
+			$col_cls_ptr=0;
+			while($post_count < $args['max_post_count'] && $query->current_post+1 < $query->post_count)
+			{	
+				$col_cls_ptr=($col_cls_ptr+1)%count($col_classes);
+				echo '<div class="col '. $col_classes[$col_cls_ptr] .'">';
+				$query->the_post();
+				global $post;
+				$card_src=get_field("card_content_source");
+				if($card_src=="use_main_content" || $card_src =="custom_card_content"){
+					doc_get_template_part('partials/card-post-custom',$args);
+				}
+				else {
+					doc_get_template_part('partials/card-post',$args);
+				}
+				
+				$post_count+=1;
+				echo "</div>";
+			}
+		?>
+		</div>
+	<?php
+	if ($query->current_post +2 == $query->post_count){
+		return False;//this query is consumed
+	}
+	else{
+		return True;
+	}
+}
+?>
+
+<?php
 function print_footer_menu($menu_location){
 	$locations = get_nav_menu_locations();
 	$menu_id = $locations[ $menu_location ] ;
