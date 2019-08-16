@@ -207,3 +207,73 @@
 		}
 	}
 }
+
+/********** Custom Card ********************/ 
+
+.custom-blog-card{
+	height: 100%;
+	width: 100%;
+	/* overflow:hidden; */
+	border:1px solid black;
+	display:flex;
+	flex-direction:column;
+	overflow:hidden;
+	margin:0;
+	padding:0;
+	position:relative;
+
+	header{
+		display:contents;
+		.blog-card-title{
+			flex-basis:2rem;
+			position:relative;
+			top:2%;
+			width:auto;
+			padding:0 5% 0 5%;
+			margin:0;
+			display: block;
+		}
+
+		.post-metadata-bar{
+			flex-basis:2rem;
+			position:relative;
+			top:4%;
+			height:50%;			
+			min-height:1rem;
+			width:auto;
+			margin:0;
+			padding:0 5% 0 5%;
+		}
+	}
+
+	.custom-blog-card-body{
+		display:block;
+		flex-grow:1;
+		flex-shrink:2;
+		height:50%;
+		overflow: hidden;
+		width:auto;
+		margin:0;
+		padding:0 5% 0 5%;
+		position:relative;
+		top:6%;
+	}	
+
+	footer{
+		flex-shrink:1;
+		height:10%;
+		width:100%;
+		margin:0;
+		padding:0;
+		position: relative;
+
+		.post-social{
+			display: block;
+			width:auto;
+			padding:0 5% 0 5%;
+			margin:0;
+			position: absolute;
+			bottom:20%;
+		}
+	}
+}
