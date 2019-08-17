@@ -1,0 +1,221 @@
+/********** Outer structure & Reflows ********************/ 
+
+.place-post{
+	width:100%;
+	height:100%;
+	padding:0;
+	margin:0;
+	display:flex;
+	flex-direction:column;
+
+	.place-image-container{
+		display:block;
+		width:100%;
+		height:40%;
+		margin:0;
+		padding:0;
+	}
+
+	.place-tabbed-pane{
+		width:100%;
+		height:60%;
+		margin:0;
+		padding:0;
+	}
+}
+
+@media (min-width: 768px) {
+
+	.place-post{
+		width:100%;
+		height:100%;
+		display:flex;
+		flex-direction: row;
+
+		.place-image-container{
+			width:50%;
+			height:100%;
+		}
+
+		.place-tabbed-pane{
+			width:50%;
+			height:100%;
+		}
+	}
+}
+
+
+/********** Tabbed pane ********************/ 
+
+.place-tabbed-pane{
+	display:flex;
+	flex-direction:column;
+
+	.place-header{
+		flex-basis:25%;
+		margin:0;
+	}
+	.place-tabcontent{
+		width:100%;
+		flex-basis:60%;
+		flex-grow:1;
+	}
+}
+
+.place-header{
+	display:flex;
+	flex-direction:column;
+	justify-content: space-evenly;
+	width:100%;
+	padding:0 0 0.5rem 0;
+	overflow:hidden;
+	.place-title{
+		display:block;
+		width:auto;
+		padding:0 1.5rem 0 1rem;
+	}
+	.place-tabs{
+		display:block;
+		min-height:1rem;
+		padding:0 0 0.8rem 0;
+		overflow:hidden;
+	}
+}
+
+
+.place-tabcontent{
+	.place-map-container{
+		height:100%;
+		width:100%;
+		display: none;
+		iframe{
+			height:100%;
+			width:100%;
+		}
+	}
+	.place-about-container{
+		display:none;
+		padding:1rem 1rem 1rem 1rem;
+		height:100%;
+		.place-description{
+			height:100%;
+		}
+
+	}
+	.place-contact-container{
+		display:none;
+		height:100%;
+	}
+
+	.place-about-container.active,
+	.place-map-container.active{
+		display:block;
+	}
+	.place-contact-container.active{
+		display:flex;
+	}
+}
+
+
+/********** Decoration ********************/ 
+
+.place{
+	border:solid 1px black;
+}
+
+.place-title{
+	text-align:center;
+	h3{
+		font-size:1.5rem;
+		margin:0;
+	}
+}
+
+.place-tabs{
+	box-shadow: 0 10px 16px -10px rgba(0,0,0,0.2),0 6px 20px -10px rgba(0,0,0,0.19);
+	text-align:center;
+	button[aria-selected="false"]{
+		background-color:pink;
+		color:black;
+	}
+
+	button[aria-selected="true"]{
+		background-color:green;
+		color:white;
+	}
+}
+
+.place-map-container{
+	padding:0 0.5rem 0.5rem 0.5rem;
+}
+
+
+.place-contact-container{
+	flex-direction: column;
+	justify-content: space-evenly;
+	width:auto;
+	padding:1rem 1rem 1rem 1.5rem;
+
+	address{
+		display:contents;
+	}
+	.hours{
+		display:block;
+		text-align:left;
+		.label{
+			display:block;
+			font-size:1.2rem;
+			margin:0 0 0.5rem 0;
+		}
+		.value{
+			display:block;
+			margin:0;
+			padding:0;
+		}
+	}
+
+	.address{
+		display: block;
+		span{
+			display:block;
+			font-size:1.2rem;
+			margin:0 0 0.5rem 0;
+		}
+		p{
+			display:block;
+			margin:0;
+			padding:0;
+		}
+
+	}
+	.phones{
+		display:block;
+		.call-button{
+			display: inline-block;
+			background-color:rgb(70, 70, 202);
+			color:white;
+			padding:0.5rem;
+			margin: 0 0.3rem 0.3rem 0;
+		}
+	}
+}
+
+@media (min-width: 768px) {
+	.place-title{
+		h3{
+			font-size:1.5rem;
+		}
+		margin-bottom:0.5rem;
+	}
+	.place-tabs{
+		button{
+			font-size:0.8rem;
+		}
+	}
+	.place-tabcontent{
+		.place-about-container{
+			text-align:justify;
+			padding:1rem 1.5rem 1rem 1.5rem;
+		}
+	}
+}
