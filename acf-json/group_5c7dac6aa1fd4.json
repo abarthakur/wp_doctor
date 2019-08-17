@@ -1,0 +1,145 @@
+{
+    "key": "group_5c7dac6aa1fd4",
+    "title": "Place Of Work Custom Fields",
+    "fields": [
+        {
+            "key": "field_5c80390019640",
+            "label": "Map Embed",
+            "name": "map_embed_html",
+            "type": "textarea",
+            "instructions": "Open your location in Google map. Look for the share button, and then click share -> embed a map. Copy that HTML code.",
+            "required": 1,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "maxlength": "",
+            "rows": "",
+            "new_lines": ""
+        },
+        {
+            "key": "field_5c80397a19641",
+            "label": "Square Image",
+            "name": "square_image",
+            "type": "image_aspect_ratio_crop",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "aspect_ratio_width": 1,
+            "aspect_ratio_height": 1,
+            "return_format": "id",
+            "preview_size": "thumbnail",
+            "library": "all",
+            "min_width": "",
+            "min_height": "",
+            "min_size": "",
+            "max_width": "",
+            "max_height": "",
+            "max_size": "",
+            "mime_types": ""
+        },
+        {
+            "key": "field_5c8039ce19642",
+            "label": "Office Hours",
+            "name": "office_hours",
+            "type": "textarea",
+            "instructions": "Format for entering office hours\r\n\r\nX AM - Y PM\r\nZ PM - L PM\r\n\r\nNote : Specify each interval in a new line. Do not add any extra text. Maintain this format. Don't worry about whitespace.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "9 AM - 11 AM",
+            "maxlength": "",
+            "rows": "",
+            "new_lines": ""
+        },
+        {
+            "key": "field_5cb37578d8729",
+            "label": "Office Address",
+            "name": "office_address",
+            "type": "wysiwyg",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "tabs": "all",
+            "toolbar": "full",
+            "media_upload": 0,
+            "delay": 0
+        },
+        {
+            "key": "field_5cb375e4d872a",
+            "label": "Office Telephones",
+            "name": "office_telephones",
+            "type": "textarea",
+            "instructions": "Format -\r\nPHONE NUMBER 1\r\nPHONE NUMBER 2\r\n\r\nNew numbers in new lines",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "maxlength": "",
+            "rows": "",
+            "new_lines": ""
+        },
+        {
+            "key": "field_5d581f3eacc7a",
+            "label": "Office Email",
+            "name": "office_email",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "place_of_work"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": 1,
+    "description": "",
+    "modified": 1566060605
+}
