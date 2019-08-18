@@ -101,11 +101,16 @@ function print_responsive_card_grid($query, $args)
 				$query->the_post();
 				global $post;
 				$card_src=get_field("card_content_source");
-				if($card_src=="use_main_content" || $card_src =="custom_card_content"){
-					doc_get_template_part('partials/card-post-custom',$args);
+				if($post->post_type=="post"){
+					if ($card_src=="use_main_content" || $card_src =="custom_card_content"){
+						doc_get_template_part('partials/card-post-custom',$args);
+					}
+					else {
+						doc_get_template_part('partials/card-post',$args);
+					}
 				}
-				else {
-					doc_get_template_part('partials/card-post',$args);
+				elseif($post->post_type=="service_card"){
+					doc_get_template_part('partials/card-service',$args);
 				}
 				
 				$post_count+=1;

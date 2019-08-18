@@ -1,0 +1,112 @@
+{
+    "key": "group_5c7da7ebc75b7",
+    "title": "Service Card Custom Fields",
+    "fields": [
+        {
+            "key": "field_5c7da8a100d7f",
+            "label": "Pin on home page",
+            "name": "pin_on_home_page",
+            "type": "true_false",
+            "instructions": "Show this service card on home page. If more than 6 service+custom cards are defined, any random 6 will be displayed.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "message": "",
+            "default_value": 0,
+            "ui": 0,
+            "ui_on_text": "",
+            "ui_off_text": ""
+        },
+        {
+            "key": "field_5c7da93900d80",
+            "label": "Square Descriptive Image",
+            "name": "square_image",
+            "type": "image_aspect_ratio_crop",
+            "instructions": "A square image must be uploaded, for previewing in blog page. If not uploaded, will crop featured image and cannot guarantee look. Automatic cropping is turned on, so just upload the image and the crop window will appear.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "aspect_ratio_width": 10,
+            "aspect_ratio_height": 7,
+            "return_format": "id",
+            "preview_size": "thumbnail",
+            "library": "all",
+            "min_width": "",
+            "min_height": "",
+            "min_size": "",
+            "max_width": "",
+            "max_height": "",
+            "max_size": "",
+            "mime_types": ""
+        },
+        {
+            "key": "field_5d59484b6d1e5",
+            "label": "Card Content Source",
+            "name": "card_content_source",
+            "type": "select",
+            "instructions": "Do you want the card to display as an image + text? Or just the text?",
+            "required": 1,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "image_and_text": "Image & Text",
+                "only_text": "Only text"
+            },
+            "default_value": [
+                "image_and_text"
+            ],
+            "allow_null": 0,
+            "multiple": 0,
+            "ui": 0,
+            "return_format": "value",
+            "ajax": 0,
+            "placeholder": ""
+        },
+        {
+            "key": "field_5d5950586d160",
+            "label": "Service Link",
+            "name": "service_link",
+            "type": "url",
+            "instructions": "Link to the corresponding \"Service\" page",
+            "required": 1,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": ""
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "service_card"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": 1,
+    "description": "",
+    "modified": 1566134402
+}
