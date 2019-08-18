@@ -128,6 +128,30 @@ function print_responsive_card_grid($query, $args)
 }
 ?>
 
+
+<?php 
+function print_checkbox_group($header,$options)
+{?>	
+	<div class="options-container">
+		<span class="options-label"> <?php echo trim($header);?> </span>
+		<div class="checkbox-wrapper">
+		<?php foreach($options as $option)
+		{?>
+			<div class="checkbox">
+				<label>
+					<input type="checkbox" value="true" 
+					name="<?php echo $option["input_name"];?>">
+					<?php echo $option["label"];?>
+				</label>
+			</div>
+		<?php
+		}?>
+		</div>
+	</div>
+<?php
+}
+?>
+
 <?php
 function print_footer_menu($menu_location){
 	$locations = get_nav_menu_locations();
@@ -143,5 +167,4 @@ function print_footer_menu($menu_location){
 	'container_id'    => '',
 	'menu_class'      => 'footer-menu'
 	));
-}
-?>
+}?>

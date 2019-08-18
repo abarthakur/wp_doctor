@@ -1,0 +1,94 @@
+/********** Form Layout ********************/ 
+
+.appform-container.horizontal-align{
+	padding:0;
+	margin:0;
+	width:100%;
+	height:100%;
+	display:flex;
+	flex-direction:row;
+	justify-content: space-around;
+}
+
+.appform-container .vertical-align{
+	padding:0;
+	margin:0;
+	width:auto;
+	height:100%;
+	display:flex;
+	flex-direction:column;
+	justify-content: space-around;
+}
+
+.appform{
+	display:flex;
+	flex-direction:column;
+	justify-content: space-evenly;
+	height:auto;
+	width:auto;
+	max-width:38rem;
+	padding:1rem;
+	.form-control[type="text"]{
+		width:100%;
+		max-width:33rem;
+	}
+
+	.options-container{
+		display:block;
+	}
+
+	.checkbox-wrapper{
+		width:100%;
+		padding:1rem 0 1rem 1.5rem;
+
+		.checkbox{
+			display:inline;
+			margin:0 1rem 0 1rem;
+		}
+	}
+
+	.details-form-group{
+		display:block;
+		width:100%;
+		margin: 0 0 1rem 0;
+		label{
+			display:block;
+			margin:0;
+		}
+		textarea{
+			display:block;
+			width:100%;
+			max-width:33rem;
+			margin:1rem 0 0 0;
+		}
+	}
+
+	.appform-submit-container{
+		display:block;
+		width:100%;
+		button{
+			width:5rem;
+			height:2rem;
+			font-size:1rem;
+		}
+	}
+}
+
+/********** Form Decoration ********************/ 
+
+.appform-container{
+	background-color:#ef6363;
+	color:#333333;
+}
+.appform{
+	.options-label{
+		text-decoration:underline;
+	}
+
+	.details-form-group{
+		label{
+			text-decoration:underline;
+		}
+	}
+}
+
