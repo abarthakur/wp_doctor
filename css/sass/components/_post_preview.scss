@@ -1,3 +1,5 @@
+/********** Post Preview Card ********************/ 
+
 .post-preview-card{
 	display:flex;
 	flex-direction:row;
@@ -33,5 +35,104 @@
 		h4{
 			font-size:1.5rem;
 		}
+	}
+}
+
+
+/********** Preview Wall ********************/
+
+.preview-post-wall{
+	margin:0;
+	padding:1rem 0 1rem 0;
+	width:100%;
+	height:100%;
+	overflow:hidden;
+	display:block;
+
+	.taglist-container{
+		margin:0;
+		padding:0;
+		width:100%;
+		height:15%;
+		text-align:center;
+		display:flex;
+		flex-direction:column;
+		justify-content: center;
+		.taglist{
+			display:block;
+			.pwall-tag-link{
+				display:inline-block;
+			}
+		}
+	}
+
+	.horizontal-align{
+		width:100%;
+		height:auto;
+		display:flex;
+		flex-direction: row;
+		justify-content: space-evenly;
+		margin: 2rem 0 0 0;
+	}
+
+	.posts-container{
+		margin:0;
+		padding:0.5rem;
+		width:auto;
+		height:auto;
+	}
+}
+
+.posts-container{
+	.row{
+		padding:0;
+		margin:0;
+	}
+
+	.post-col{
+		padding:0.5rem;
+		.post-preview-card{
+			border:solid 1px black;
+			height:10rem;
+		}
+	}
+}
+
+
+/********** Preview Wall Decoration ********************/ 
+
+
+.preview-post-wall{
+	.taglist-container h4{
+		font-size:1.8rem;
+	}
+	.taglist{
+		margin:1rem 0 0 0;
+		.pwall-tag-link{
+			background-color:rgb(158, 80, 80);
+			color:white;
+			text-decoration:none;
+			padding:0.3rem;
+			margin:0 0.5rem 0.5rem 0;
+
+			&:visited{
+				text-decoration:none;
+				color:white;
+			}
+
+			&:hover{
+				background-color:green;
+			}
+		}
+	}
+	.post-preview-card{
+		.preview-card-text{
+			padding:0.5rem 0.5rem 0 0.5rem;
+		}
+	}
+
+	.pwall-tag-link.active{
+		background-color:blue;
+		color:white;
 	}
 }
