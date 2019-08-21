@@ -41,3 +41,10 @@ ul {
 ol{
 	list-style: decimal;
 }
+
+button{
+	border:unset;
+	&:focus {
+		outline:0;
+	}
+}
