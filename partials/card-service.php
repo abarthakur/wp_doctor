@@ -9,6 +9,10 @@ $service_link=get_field("service_link");
 if (!$service_link || !trim($service_link)){
 	$service_link="#";
 }
+$body_class="";
+if ($card_src=="only_text"){
+	$body_class="full-height";
+}
 ?>
 <article class="service-card <?php echo trim($card_classes);?>">
 	<?php 
@@ -19,7 +23,7 @@ if (!$service_link || !trim($service_link)){
 		</header>
 	<?php
 	}?>
-	<div class="service-card-body">
+	<div class="service-card-body <?php echo $body_class;?>">
 		<div class="clamped-text-container">
 			<a class="service-card-title" href="<?php echo $service_link;?>">
 				<h4 class="service-card-title"><?php echo get_the_title();?></h4>
