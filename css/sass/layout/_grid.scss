@@ -46,9 +46,9 @@
 	}
 
 	.form-section{
+		display:block;
 		max-height:120vh;
 		.appform-header{
-			display:block;
 			width:auto;
 			padding:2rem 2rem 0 2rem;
 			margin:0;
@@ -85,6 +85,11 @@
 
 @media (min-width: 768px) {
 	.front-page-container{
+
+		.about-section{
+			min-height:60vh;
+		}
+
 		.places-section{
 			.place-post-container{
 				height:60vw;
@@ -126,6 +131,60 @@
 		}
 	}
 }
+
+@media (min-width: 992px) {
+	.front-page-container{
+		.places-section{
+			.place-post-container{
+				height:45vw;
+				padding:2rem;
+			}
+		}
+
+		.blog-section{
+			.preview-post-wall{
+				.posts-container{
+					width:100%;
+					max-width: 100%;
+					padding:4.5rem;
+				}
+			}
+		}
+
+		
+		.form-section{
+			display:flex;
+			flex-direction: row;
+			justify-content: center;
+			.appform-header{
+				padding:0;
+				text-align: center;
+				width:50%;
+				justify-content: center;
+				.appform-header-title{
+					position:relative;
+					left:5%;
+					margin:0 auto 2rem auto;
+				}
+				.appform-header-subtext{
+					position:relative;
+					left:5%;
+					margin:0 auto 0 auto;
+				}
+			}
+			.form-container{
+				width:50%;
+				margin:0;
+				padding:1rem;
+			}
+			
+			.appform-container{
+				width:100%;
+			}
+		}
+	}
+}	
+
 
 .about-section{
 	display:flex;
@@ -284,6 +343,12 @@
 		color:#333333;
 		margin:0;
 		padding:0;
+		.appform-header-title{
+			font-size:2.5rem;
+		}
+		.appform-header-subtext{
+			font-size:1.4rem;
+		}
 	}
 
 	.form-container{
@@ -292,5 +357,18 @@
 
 	.appform-container{
 		border: 1px solid black;
+	}
+}
+
+@media (min-width: 992px) {
+	.form-section{
+		.appform-header{
+			.appform-header-title{
+				font-size:3.5rem;
+			}
+			.appform-header-subtext{
+				font-size:1.4rem;
+			}
+		}
 	}
 }
