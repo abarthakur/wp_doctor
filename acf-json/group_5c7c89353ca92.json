@@ -1,0 +1,40 @@
+{
+    "key": "group_5c7c89353ca92",
+    "title": "Video Post Custom Fields",
+    "fields": [
+        {
+            "key": "field_5c7c8947946c7",
+            "label": "Video Link",
+            "name": "video_link",
+            "type": "url",
+            "instructions": "Link of the video. So far only youtube links are supported. Mandatory argument.",
+            "required": 1,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": ""
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "video_post"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": 1,
+    "description": "",
+    "modified": 1574861467
+}
