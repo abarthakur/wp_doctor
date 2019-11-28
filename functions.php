@@ -170,4 +170,35 @@ function register_theme_settings_pages() {
 	add_options_page( 'General Theme Settings', 'General Theme Settings',
 	 'manage_options', 'general-theme-settings-page', 'print_general_theme_settings_page' );
 }
+
+function doc_const_categories_per_page(){
+	//store constant here
+	//eh, better than a global right?
+	//but I guess globals can be mutated
+	return 3;
+}
+
+function doc_change_category_query( $query ) {
+    if ( $query->is_main_query() && ! is_admin() && is_category() ) {
+		//get page query var
+		$paged = ( get_query_var( 'paged' ) ) ? absint( get_query_var( 'paged' ) ) : null;
+		$page_qvar = ( get_query_var( 'page' ) ) ? absint( get_query_var( 'page' ) ) : null;
+		$paged = ($paged==null) ? ($page_qvar==null ? 1 : $page_qvar): $paged;
+		//new args
+		$args = array(
+			'posts_per_page'   => doc_const_categories_per_page(),
+			'post_type'        => 'post',
+			'paged'            => $paged,
+			'orderby'        => 'date',
+			'order'          => 'ASC',
+			'post_status'    => 'publish',
+		);
+		//set args
+		foreach($args as $key=>$value){
+			$query->set($key,$value);
+		}
+    }
+
+}
+add_action( 'pre_get_posts', 'doc_change_category_query' );
 ?>
