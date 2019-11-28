@@ -3,7 +3,7 @@
 	<h1 id="post-title"><?php echo the_title();?></h1>
 	<hr class="my-3">
 	
-	<?php print_image("wide_image",array("medium"=>"1x","large"=>"2x"),"featured-img",false);?>
+	<?php print_image("wide_image",array("medium"=>"1x","large"=>"2x"),"featured-img fluid-img",false);?>
 	<hr class="my-3">
 
 	<div class="date-bar d-flex flex-row-reverse">
