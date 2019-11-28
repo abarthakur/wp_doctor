@@ -17,10 +17,11 @@ require_once get_stylesheet_directory() . "/includes/utils.php";
 //TODO : script to fix scrolling for parent links?
 ?>
 
-<div class="top-container">
-	<div class="row top-page-row">
-		<div class="col-lg-8 col-md col-sm content-col">
-		<?php
+<div class="page-section-wrap">
+	<div class="page-section-inner">
+		<div class="two-col-container">
+			<div class="main-col">
+			<?php
 			$children_query=null;
 			if (have_posts()){
 				while (have_posts()){
@@ -59,10 +60,11 @@ require_once get_stylesheet_directory() . "/includes/utils.php";
 				wp_reset_postdata();
 			}
 			?>
-		</div>
-		<div class="col-lg-4 col-md col-dm sidebar-col">
-			<div class="sidebar-wrapper">
-				<?php get_template_part('partials/sidebar'); ?>
+			</div>
+			<div class="side-col">
+				<div class="sidebar-wrapper">
+					<?php get_template_part('partials/sidebar'); ?>
+				</div>
 			</div>
 		</div>
 	</div>
