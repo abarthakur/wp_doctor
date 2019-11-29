@@ -89,14 +89,13 @@ function print_responsive_card_grid($query, $args)
 		<div class="row <?php echo $args["row_classes"];?>">
 		<?php
 			$col_classes=$args['col_classes'];
-			$post_count=0;
 			if (!is_array($col_classes) && is_string($col_classes)){
 				$col_classes=array($col_classes);
 			}
-			$col_cls_ptr=0;
+			$post_count=0;
 			while($post_count < $args['max_post_count'] && $query->current_post+1 < $query->post_count)
 			{	
-				$col_cls_ptr=($col_cls_ptr+1)%count($col_classes);
+				$col_cls_ptr=($post_count)%count($col_classes);
 				echo '<div class="col '. $col_classes[$col_cls_ptr] .'">';
 				$query->the_post();
 				global $post;
