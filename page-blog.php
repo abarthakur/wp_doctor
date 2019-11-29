@@ -33,7 +33,9 @@ if ($feat_post_query->post_count>0){
 			'posts_per_page' => 3,
 			'post_type'=>'post',
 			'post__in'=>$first_posts,
-			'post_status'    => 'publish'
+			'post_status'    => 'publish',
+			'orderby'        => 'post__in',
+			'order'          => 'ASC'
 		);
 		$first_posts_query=new WP_Query( $args);
 	}
